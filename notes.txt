@@ -1,0 +1,9 @@
+1. extra_action = used when we want to retrieve other
+from pk se search nahi krna h hmko
+
+@action = abcd routable methods ko define krne ke liye
+koi bhi customs method ko define krne k liye
+joki url rkhte hai.
+
+tabularinline = agar aapko ek model k andar dusra model dikhana
+h to in django admin use tabular inline

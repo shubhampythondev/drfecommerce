@@ -1,0 +1,54 @@
+openapi: 3.0.3
+info:
+  title: DRF Ecommerce API
+  version: 1.0.0
+  description: DRF Ecommerce API for Django Ninjas
+paths:
+  /brand//:
+    get:
+      operationId: brand_retrieve
+      description: A simple ViewSet for listing Brand.
+      tags:
+      - brand
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /category//:
+    get:
+      operationId: category_retrieve
+      description: A simple ViewSet for listing Category.
+      tags:
+      - category
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /product//:
+    get:
+      operationId: product_retrieve
+      description: A simple ViewSet for listing Product.
+      tags:
+      - product
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid

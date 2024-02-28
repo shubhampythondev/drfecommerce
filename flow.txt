@@ -1,0 +1,5 @@
+User perspective
+-> Homepage
+-> Select the product category.
+-> Browse (Display all product as per category)
+-> View Individual Product
